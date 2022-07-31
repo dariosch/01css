@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/coco.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>01 - ONLY CSS basics</title>
     <!--Documento html con algunas cuestiones basicas de css
         Voy a usar inline, internal y external css dependiendo el caso-->
@@ -35,5 +37,19 @@
     <p style="direction: rtl; unicode-bidi: bidi-override; text-align: left;">Texto escrito al reves.</p>
     <p><span style="letter-spacing: 5px;">Texto espaciado </span><span style="letter-spacing: -2px;">Texto junto    </span>  Texto normal</p>
     <h2 style="text-shadow: 2px 2px 5px green">Texto con sombreado</h2>
+    <p><span style="font-family: 'Brush Script MT', cursive;">Texto con tipografia cursiva </span><span style="font-family: monospace">Texto con tipografia monospace </span><span style="font-family: sans-serif">Texto con tipografia sans-serif </span><span style="font-family: Copperplate, Papyrus, fantasy;">Texto con tipografia de fantasia </span>Texto con tipografia por defecto</p>
+    <p><span style="font-variant: small-caps;">Variante de texto con small caps </span>Texto por defecto</p>
+    <p>Texto con tamano base, em=1. <span style="font-size: 1.15em;">Texto con tamano 15% mas grande, em=1.15 </span><span style="font-size: 0.85em;">Texto con tamano 15% mas chico, em=0.85 </span></p>
+    <p style="font-size: 2vw;">Texto con tamano 10 viewport width, responsivo y cambia de acuerdo a la pantalla. </p>
+    <p style="font-family: 'Sofia', sans-serif; font-size: 1.15em;">Texto con tipografia obtenida de Google Fonts y 15% mas grande. </p>
+    <p class="font-effect-fire" style="font-family: 'Sofia', sans-serif;">Texto con tipografia de Google Fonts y efecto fire y 15% mas grande. </p>
+    <hr>
+    <p style="font-family: sans-serif;">Iconos basicos usando libreria de Google Icons </p>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">computer</i>
+    <br>
+    <p><span style="cursor:wait">Cuando el mouse este sobre este texto se va a cambiar el cursor de espera/carga</span></p>
+    <p><span style="cursor:help">Y si esta sobre este aparecera el cursor de ayuda</span></p>
+    <br>
 </body>
 </html>

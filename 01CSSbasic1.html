@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/coco.png">
+    <title>02 - Basic CSS +1</title>
+    <style>
+        .cajaimg{
+            float:left;
+            width:220px;
+            text-align:center;
+            border: 1px solid darkolivegreen;
+            margin: 15px;
+            padding: 5px;
+        }
+        .button{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <p>Diferencias entre display:none y visibility:hidden. display:none "elimina" el elemento del documento, no toma ningún espacio. visibility:hidden lo oculta por lo que sí ocupa el espacio correspondiente. </p>
+    <div class="cajaimg" id="imgbox1">display:none<br>
+        <img src="img/imgchica1.jpg" alt="gatoenrecital" style="width:100%">
+        <button onclick="removeElement()">Aplicar display:none</button>
+    </div>
+    <div class="cajaimg" id="imgbox2">visibility:hidden<br>
+        <img src="img/imgchica2.jpg" alt="carpinchobb" style="width:100%">
+        <button onclick="cambioVisibilidad()">Aplicar visibility:hidden</button>
+    </div>
+    <div class="cajaimg">Reset<br>
+        <img src="img/imgchica3.jpg" alt="cangrejopescado" style="width:100%">
+        <button onclick="reset()">Resetear</button>
+    </div>
+
+    <script>
+        function removeElement(){
+            document.getElementById("imgbox1").style.display = "none";
+        }
+        function cambioVisibilidad(){
+            document.getElementById("imgbox2").style.visibility = "hidden";
+        }
+        function reset(){
+            document.getElementById("imgbox1").style.display = "block";
+            document.getElementById("imgbox2").style.visibility = "visible";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/coco.png">
+    <title>03 - basic CSS - Positioning</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .divsticky{
+            position:sticky;
+            top:0;
+            background-color: aquamarine;
+            border: 1px solid blueviolet;
+        }
+        .textoCentrado{
+            position:absolute;
+            top:50%;
+            width: 50%;
+            text-align: center;
+            font-size: 30px;
+            color: aliceblue;
+        }
+        .textoAbajoDerecha{
+            position: absolute;
+            bottom: 10px;
+            left: 500px;
+            font-size:30px;
+            color:aliceblue;
+        }
+        .textoArribaIzquierda{
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            font-size: 30px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Posicionamiento: Sticky div</p>
+        <div class="divsticky">Div fijo al scrollear</div>
+        <p style="padding: bottom 10000px;">
+            Texto para completar y que se scrollee hacia abajo. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod adipisci doloribus est dicta similique consequatur vel voluptatem ullam illum culpa nulla eos temporibus obcaecati soluta consequuntur laborum dolorum, cum maiores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos, magnam et molestiae repellat ullam! Corporis provident libero quod harum, consectetur quibusdam perferendis sit, aut nihil magni commodi praesentium? Fugiat.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia a architecto nulla placeat, impedit sit, est illum ab voluptate autem fugiat dignissimos deleniti ipsum officiis? Obcaecati consequatur harum provident laborum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor amet recusandae assumenda, molestiae voluptatem consequatur eius molestias hic nobis! Praesentium mollitia rerum dolore possimus, quam necessitatibus hic asperiores distinctio!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure et dolore qui architecto voluptatem excepturi fugiat delectus voluptates repellendus id, incidunt impedit amet, earum totam iste dolorum! Odit, velit labore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cumque delectus eligendi doloremque suscipit obcaecati sapiente? Aliquid natus neque ipsa, blanditiis iusto sunt enim. Ad similique deleniti eum consequuntur voluptatum!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A pariatur necessitatibus excepturi fugiat officiis autem facere voluptates, nesciunt, error ex veniam itaque reprehenderit accusantium eum nobis et beatae recusandae ducimus!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione cupiditate nesciunt recusandae tempora labore repellendus blanditiis est incidunt ducimus, esse, quam eos magni neque facilis culpa nulla odit maiores ullam!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo itaque ea eveniet labore, repudiandae consequatur totam magni nemo eaque voluptas aspernatur sapiente suscipit quibusdam ad, debitis magnam! Perferendis, officiis?    
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aperiam blanditiis eius. Praesentium adipisci quos eligendi, nihil nobis odit exercitationem possimus libero voluptates officia eos totam eaque, voluptatem culpa ipsam.
+        </p>
+    </div>
+    <hr>
+    <br>
+    <div class="container">
+        <img src="img/fondoespacio.jpg" alt="Espacio Profundo" style="opacity:0.9;">
+        <div class="textoArribaIzquierda">Texto arriba a la izquierda</div>
+        <div class="textoCentrado">Texto centrado en la imagen</div>
+        <div class="textoAbajoDerecha">Texto abajo a la derecha</div>
+        
+    </div>
+</body>
+</html>

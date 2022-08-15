@@ -21,20 +21,22 @@
     </style>
 </head>
 <body>
-    <p>Diferencias entre display:none y visibility:hidden. display:none "elimina" el elemento del documento, no toma ningún espacio. visibility:hidden lo oculta por lo que sí ocupa el espacio correspondiente. </p>
-    <div class="cajaimg" id="imgbox1">display:none<br>
-        <img src="img/imgchica1.jpg" alt="gatoenrecital" style="width:100%">
-        <button onclick="removeElement()">Aplicar display:none</button>
+    <div>
+        <p>Diferencias entre display:none y visibility:hidden. display:none "elimina" el elemento del documento, no toma ningún espacio. visibility:hidden lo oculta por lo que sí ocupa el espacio correspondiente. </p>
+        <div class="cajaimg" id="imgbox1">display:none<br>
+            <img src="img/imgchica1.jpg" alt="gatoenrecital" style="width:100%">
+            <button onclick="removeElement()">Aplicar display:none</button>
+        </div>
+        <div class="cajaimg" id="imgbox2">visibility:hidden<br>
+            <img src="img/imgchica2.jpg" alt="carpinchobb" style="width:100%">
+            <button onclick="cambioVisibilidad()">Aplicar visibility:hidden</button>
+        </div>
+        <div class="cajaimg">Reset<br>
+            <img src="img/imgchica3.jpg" alt="cangrejopescado" style="width:100%">
+            <button onclick="reset()">Resetear</button>
+        </div>
     </div>
-    <div class="cajaimg" id="imgbox2">visibility:hidden<br>
-        <img src="img/imgchica2.jpg" alt="carpinchobb" style="width:100%">
-        <button onclick="cambioVisibilidad()">Aplicar visibility:hidden</button>
-    </div>
-    <div class="cajaimg">Reset<br>
-        <img src="img/imgchica3.jpg" alt="cangrejopescado" style="width:100%">
-        <button onclick="reset()">Resetear</button>
-    </div>
-
+    
     <script>
         function removeElement(){
             document.getElementById("imgbox1").style.display = "none";

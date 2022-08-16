@@ -38,11 +38,59 @@
             font-size: 30px;
             color: aliceblue;
         }
+        .divConOverflow{
+            width: 400px;
+            height: 100px;
+            border: 2px solid teal;
+            background-color: azure;
+            overflow: auto;
+            margin-top:10px;
+        }
+        .divFloats{
+            float: right;
+        }
+        .divFloatClear0 {
+            width: 500px;
+            height: 100px;
+            border: 2px solid black;
+            float: left;
+            overflow: auto;
+            padding: 2px;
+        }
+        .divFloatClear {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            float: left;
+            padding: 4px;
+        }
+        .divFloatClear2 {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            clear:both;
+            padding: 4px;
+        }
+        .menuBase{
+            margin:0;
+            padding: 0;
+            background-color: yellowgreen;
+            text-align: center;
+        }
+        .menuBase li{
+            display: inline-block;
+            font-size: 15px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
     <div>
-        <p>Posicionamiento: Sticky div</p>
+        <h4>Posicionamiento: Sticky div</h4>
         <div class="divsticky">Div fijo al scrollear</div>
         <p style="padding: bottom 10000px;">
             Texto para completar y que se scrollee hacia abajo. 
@@ -59,13 +107,49 @@
         </p>
     </div>
     <hr>
-    <br>
+    <h4>Posicionamiento con relative, absolute</h4>
     <div class="container">
         <img src="img/fondoespacio.jpg" alt="Espacio Profundo" style="opacity:0.9;">
         <div class="textoArribaIzquierda">Texto arriba a la izquierda</div>
         <div class="textoCentrado">Texto centrado en la imagen</div>
         <div class="textoAbajoDerecha">Texto abajo a la derecha</div>
-        
     </div>
+    <hr>
+    <h4>Overflow automatico, solo hara scroll si el contenido es mayor al area designada</h4>
+    <div class="divConOverflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repudiandae, magni voluptate illo veritatis deleniti commodi minima odio amet neque velit inventore quos culpa temporibus? Ratione amet ipsum ab quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quidem fugiat velit ullam recusandae exercitationem porro at ab facilis corporis. Hic ipsum quod qui? Blanditiis ratione vel eos reprehenderit molestiae.
+    </div>
+    <br><hr>
+    <h4>Posicionamiento con float en divs hacia izquierda</h4>
+    <div>
+        <div class="divFloats">
+            <div style="background-color:blue;">Div 1</div>
+            <div style="background-color:red;">Div 2</div>
+            <div style="background-color:forestgreen;">Div 3</div>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ut debitis impedit obcaecati distinctio, facilis at pariatur laborum blanditiis veniam aliquid voluptatibus nesciunt! Quidem, minus adipisci. Ut quaerat at asperiores!Loremlore Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem illum illo, mollitia ab explicabo corrupti quod provident eligendi assumenda quibusdam cupiditate nulla accusamus soluta? Dolore quia neque at ratione. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere possimus eius obcaecati et voluptates eaque minus odit error. Obcaecati tempora rem perferendis reprehenderit ipsum. Iste iure vel voluptates dolore quae!
+    </div>
+    <hr>
+    <h4>Posicionamiento luego de usar floats con clear</h4>
+    <div class="divFloatClear0">
+        Este box tiene float:left, lo que indica que cualquier contenido despues en default se va a poner al lado
+    </div>
+    <div class="divFloatClear">
+        Box por default, al ser tambien float left se pone al lado del anterior
+    </div>
+    <div class="divFloatClear2">
+        Box con clear: both, por lo que se muestra debajo de los elementos que tienen float y no al lado
+    </div>
+    <hr>
+    <h4>Menu con display:inline-block, respeta margenes y paddings. Con inline no</h4>
+    <ul class="menuBase">
+        <li>Home</li>
+        <li>Pagina1</li>
+        <li>Pagina2</li>
+        <li>Pagina3</li>
+    </ul>
+    <hr>
+    
+    
 </body>
 </html>

@@ -86,6 +86,32 @@
             font-size: 15px;
             padding: 20px;
         }
+        ul{
+            list-style-type: none;
+        }
+        li a {
+            display:block;
+        }
+        .active{
+            background-color: yellow;
+        }
+        .divHover:hover {
+            background-color: greenyellow;
+        }
+        .inputColor:focus  {
+            background-color: bisque;
+        }
+        p.intro::first-letter{
+            color: brown;
+            font-size: 200%;
+        }
+        ::selection{
+            background-color: goldenrod;
+            color: blueviolet;
+        }
+        p.beforeInsert::before{
+            content: url("img/imgchica1.jpg")
+        }
     </style>
 </head>
 <body>
@@ -143,13 +169,38 @@
     <hr>
     <h4>Menu con display:inline-block, respeta margenes y paddings. Con inline no</h4>
     <ul class="menuBase">
-        <li>Home</li>
-        <li>Pagina1</li>
-        <li>Pagina2</li>
-        <li>Pagina3</li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Pagina1</a></li>
+        <li><a href="#">Pagina2</a></li>
+        <li><a href="#">Pagina3</a></li>
     </ul>
     <hr>
-    
-    
+    <h4>Aplicacion de pseudoclases</h4>
+    <div class="divHover">
+        Div que cambia de color cuando se coloca el mouse por encima
+        <br>
+        <code>Codigo etc etc etc</code>
+        <br>
+        Mas texto para extender el div
+    </div>
+    <br>
+    <div>
+        Input que cambia de color cuando se clickea encima
+        <br>
+        <input type="text" class="inputColor" name="texto" placeholder="Ingrese texto aca o clickee para cambiar el color">
+    </div>
+    <hr>
+    <h4>Aplicación de Pseudoelementos</h4>
+    <div>
+        <p class="intro">Esta es una introduccion</p>
+        <p>Este es texto comun de ejemplo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quaerat eum quis, sapiente laboriosam recusandae minus eos sit autem totam sequi, itaque ad iusto cupiditate dolorum hic harum labore ullam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, laudantium. Voluptates ex esse, natus praesentium autem optio repudiandae modi consequatur corrupti unde adipisci, amet corporis, maxime voluptatum ducimus doloremque laudantium!
+        </p>
+        <p class="beforeInsert">
+            <br>
+            Antes de este elemento p se inserta una imagen definido por el pseudoelemento p.beforeInsert::before 
+        </p>
+    </div>
+
 </body>
 </html>

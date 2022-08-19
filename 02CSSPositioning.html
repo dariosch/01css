@@ -7,6 +7,9 @@
     <link rel="icon" type="image/x-icon" href="images/coco.png">
     <title>03 - basic CSS - Positioning</title>
     <style>
+        body{
+            counter-reset: section;
+        }
         .container{
             position: relative;
         }
@@ -112,6 +115,41 @@
         p.beforeInsert::before{
             content: url("img/imgchica1.jpg")
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display:none;
+            position:absolute;
+            min-width: 200px;
+            background-color: aqua;
+            box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+            padding: 10px;
+            z-index : 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+        }
+        input[type=text] {
+            width: 230px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 10px 18px 10px 36px;
+            transition: width 0.6s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 100%;
+        }
+        h6::before {
+            counter-increment: section;
+            content: "Numero de titulo h6 " counter(section) ": ";
+        }
     </style>
 </head>
 <body>
@@ -201,6 +239,29 @@
             Antes de este elemento p se inserta una imagen definido por el pseudoelemento p.beforeInsert::before 
         </p>
     </div>
-
+    <hr>
+    <h4>Dropdowns</h4>
+    <div>
+        <p>Se muestra un dropdown, usando una clase "oculta" (con display:none) que solo se desplegara y mostrara cuando se posicione el mouse por encima (pseudoclase hover)</p>
+        <div class="dropdown">Si se posiciona el mouse por aqui se mostrara el dropdown
+            <div class="dropdown-content">
+                Informacion mostrada
+            </div>            
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <hr>
+    <h4>Input con animacion con transition</h4>
+    <input type="text" name="busqueda" placeholder="click para expandir">
+    <hr>
+    <h4>Counter con css</h4>
+    <h6>Primer elemento h6</h6>
+    <h6>Segundo elemento h6</h6>
+    <h6>Tercer elemento h6</h6>
+    <h6>Cuarto elemento h6</h6>
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/coco.png">
+    <title>06 - CSS Ejercicios extra de posicionamiento</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .parentContainer {
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            position: relative;
+        }
+        .childContainer {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    En este documento vamos a realizar diversas aproximaciones de posicionamiento de un div usando Position, Flexbox y Grid
+    <hr>
+    <h4>Position basico: relative-absolute-50%-translate</h4>
+    <div class="parentContainer">
+        <div class="childContainer">
+        </div>
+    </div>
+    <hr>
+    <h4>Position </h4>
+</body>
+</html>

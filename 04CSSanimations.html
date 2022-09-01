@@ -34,6 +34,44 @@
         .div2:hover{
             transform: rotateZ(100deg);
         }
+        .div3{
+            width: 100px;
+            height: 50px;
+            background-color: navy;
+            border: 1px solid black;
+            transition: width 2s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease-out;
+        }
+        .div3:hover{
+            width: 300px;
+        }
+        .div4 {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            border: 1px solid black;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        .div4:hover {
+            width: 400px;
+            height: 400px;
+            transform: rotate(180deg);
+        }
+        @keyframes ejemplo {
+            0% {background-color: red;}
+            25% {background-color: blueviolet;}
+            50% {background-color: green;}
+            100% {background-color: red;}
+        }
+        .div5 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation-name: ejemplo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
     </style>
 </head>
 <body>
@@ -42,5 +80,15 @@
     <div class="div0">Elemento 1</div>
     <div class="div1">Elemento 2</div>
     <div class="div2">Elemento 3</div>
+    <hr><hr>
+    <h4>Transición al pasar el mouse por encima, luego de 0.5 segundos</h4>
+    <div class="div3"></div>
+    <hr>
+    <h4>Transicion sumando transformacion</h4>
+    <div class="div4"></div>
+    <hr><hr>
+    <h4>Animacion de background por tiempo</h4>
+    <div class="div5"></div>
+    <hr><hr>
 </body>
 </html>

@@ -18,6 +18,15 @@
             background-color: palevioletred;
             position: relative;
         }
+        .parentContainer3 {
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .childContainer {
             width: 100px;
             height: 100px;
@@ -38,6 +47,12 @@
             right: 0;
             margin: auto;
         }
+        .childContainer3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
@@ -52,6 +67,12 @@
     <h4>Position basico 2: top-bottom-left-right = 0, margin auto</h4>
     <div class="parentContainer">
         <div class="childContainer2">
+        </div>
+    </div>
+    <hr>
+    <h4>Position con flex justify-content y align-items = center</h4>
+    <div class="parentContainer3">
+        <div class="childContainer3">
         </div>
     </div>
 </body>

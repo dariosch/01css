@@ -27,6 +27,42 @@
             justify-content: center;
             align-items: center;
         }
+        .parentContainer4 {
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .parentContainer5 {
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            position: relative;
+            display: flex;
+        }
+        .parentContainer6 {
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .parentContainer7 {
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            display: grid;
+            place-items: center;
+        }
+        .parentContainer8 {
+            width: 400px;
+            height: 400px;
+            background-color: palevioletred;
+            display: grid;
+        }
         .childContainer {
             width: 100px;
             height: 100px;
@@ -53,6 +89,36 @@
             background-color: yellowgreen;
             position: absolute;
         }
+        .childContainer4 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            align-self:center;
+        }
+        .childContainer5 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            margin:auto;
+        }
+        .childContainer6 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+        .childContainer6 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            align-self: center;
+            justify-self: center;
+        }
+        .childContainer7 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +140,38 @@
     <div class="parentContainer3">
         <div class="childContainer3">
         </div>
+    </div>
+    <hr>
+    <h4>Position con flex justify-content en parent, align-self center en child</h4>
+    <div class="parentContainer4">
+        <div class="childContainer4">
+        </div>
+    </div>
+    <hr>
+    <h4>Position con flex en parent y child con margin auto</h4>
+    <div class="parentContainer5">
+        <div class="childContainer5">
+        </div>
+    </div>
+    <hr>
+    <h4>Position con grid definido en parent junto a justify-content y align items center</h4>
+    <div class="parentContainer6">
+        <div class="childContainer5"></div>
+    </div>
+    <hr>
+    <h4>Position con el grid y place items center</h4>
+    <div class="parentContainer7">
+        <div class="childContainer5"></div>
+    </div>
+    <hr>
+    <h4>Position con el grid en parent y el justify self y align self en child como center</h4>
+    <div class="parentContainer8">
+        <div class="childContainer6"></div>
+    </div>
+    <hr>
+    <h4>Position con el grid en parent y el margin auto</h4>
+    <div class="parentContainer8">
+        <div class="childContainer7"></div>
     </div>
 </body>
 </html>

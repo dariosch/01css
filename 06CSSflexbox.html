@@ -19,17 +19,39 @@
             background-color: blueviolet;
             margin: 10px;
         }
-        .box2{
-            width: 200px;
-            height: 200px;
+        .container2{
+            display: grid;
+            grid-template: 1fr 1fr 1fr / 200px auto 300px;
+            justify-content: space-around;
+            align-items: start;
             background-color: aliceblue;
+            gap: 10px;
+        }
+        .box2{
+            width: 150px;
+            height: 150px;
+            background-color: goldenrod;
+            display: flex;       /* Jugamos con el flex tambien para centrar cosas */
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
+    <h4>Distribución con FLEX</h4>
     <div class="container">
         <div class="box1"></div>
         <div class="box1"></div>
+    </div>
+    <hr>
+    <h4>Distribucion con GRID</h4>
+    <div class="container2">
+        <div class="box2">1a</div>
+        <div class="box2">2b</div>
+        <div class="box2">3C</div>
+        <div class="box2">4D</div>
+        <div class="box2">5e</div>
     </div>
 </body>
 </html>
